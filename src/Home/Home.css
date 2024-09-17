@@ -1,0 +1,86 @@
+/* src/Home/Home.css */
+.App-header {
+    background-image: url('../../public/images/fundo-header.jpg');
+    background-color: rgba(0, 0, 0, 0.5); /* Cor preta com 50% de opacidade */
+    background-size: cover;
+    background-position: center;
+    background-blend-mode: overlay; /* Modo de mistura */
+    color: white;
+    padding: 40px;
+    text-align: center;
+    position: relative;
+    top: 0;
+  }
+  
+  .App-header h1 {
+    font-size: 3rem;
+  }
+  
+  .App-header p {
+    font-size: 1.5rem;
+  }
+  
+  .App-nav {
+    background-color: rgba(0, 0, 0, 0.5); /* Fundo preto semi-transparente */
+    color: white;
+    padding: 1px 20px 1px 1px;
+    position: fixed; /* Fixa o menu no topo da página */
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000; /* Garante que o menu fique sobre a imagem de fundo */
+    transition: background-color 0.3s; /* Transição suave para o efeito hover */
+  }
+  
+  .App-nav:hover {
+    background-color: rgba(0, 0, 0, 0.8); /* Fundo preto mais opaco quando o mouse passa */
+  }
+  
+  .App-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+  }
+  
+  .App-nav li {
+    margin: 0;
+    padding: 0;
+  }
+  
+  .App-nav a {
+    color: white;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s; /* Transição suave para o efeito hover nos links */
+  }
+  
+  .App-nav a:hover {
+    background-color: rgba(255, 255, 255, 0.2); /* Fundo branco semi-transparente ao passar o mouse */
+  }
+  
+  .gallery {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .about {
+    padding: 10px;
+    text-align: justify;
+  }
+  
+  .photos img {
+    width: 200px;        /* Largura fixa */
+    height: 200px;       /* Altura fixa */
+    padding: 10px;
+    object-fit: cover;   /* Cobre o contêiner mantendo a proporção */
+  }
+  
+  .cta {
+    padding: 20px;
+    background-color: #f4f4f4;
+  }
+  

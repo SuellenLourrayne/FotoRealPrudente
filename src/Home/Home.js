@@ -6,16 +6,21 @@ import "./Home.css";
 const Home = () => {
   const navigate = useNavigate(); // Use useNavigate para navegação programática
 
-  const handleButtonClick = (page) => {
-    navigate("/"+page); // Redireciona para a página pedida
+  const handleFormButtonClick = (page) => {
+    navigate("/FormPage"); // Redireciona para a página pedida
   };
+
+  const handleGalleryButtonClick = (page) => {
+    navigate("/Gallery"); // Redireciona para a página pedida
+  };
+
   return (
     <div className="App">
 
       <section id="contact" className="cta">
         <h2>Precisa de um orçamento?</h2>
         <p>Preencha o formulário e entraremos em contato!</p>
-        <button onClick={handleButtonClick("FormPage")}>Solicitar Orçamento</button>
+        <button onClick={handleFormButtonClick}>Solicitar Orçamento</button>
       </section>
 
       <section id="gallery" className="gallery">
@@ -28,7 +33,7 @@ const Home = () => {
           <img src="/images/5.jpg" alt="Trabalho 5" />
           <img src="/images/6.jpg" alt="Trabalho 6" />
         </div>
-        <button onClick={handleButtonClick("Gallery")}>Ver Mais</button>
+        <button onClick={handleGalleryButtonClick}>Ver Mais</button>
       </section>
 
       <section id="about" className="about">
